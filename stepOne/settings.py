@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-abi#3xf!2&2kdm&^jdh6x!kvkl+7qz52kc8c&%^vp8t5pgktr-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'stepOne.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
